@@ -4,22 +4,33 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 <title>37th Early Bird Open Mens 5000 Meters HS Open 5K</title>
 </head>
    <body>
-   <a href = "#main">Skip to Main Content</a>
-   <nav>
-     <ul>
-        <li><a href="index.html">Home Page</a></li>
-        <li><a href="#summary">Summary</a></li>
-        <li><a href="#team-results">Team Results</a></li>
-        <li><a href="#individual-results">Individual Results</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-     </ul>
-   </nav>
+   <a class="skip-link" href = "#main">Skip to Main Content</a>
+
+    <nav id="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Home Page</a></li>
+            <li><a href="#summary"><i class="fas fa-file-alt"></i> Summary</a></li>
+            <li><a href="#team-results"><i class="fas fa-users"></i> Team Results</a></li>
+            <li><a href="#individual-results"><i class="fas fa-user"></i> Individual Results</a></li>
+            <li><a href="#gallery"><i class="fas fa-images"></i> Gallery</a></li>
+        </ul>
+    </nav>
+
+
    <header>
       <!--Meet Info-->
-       
+      <div class="top-bar">
+        <span onclick="openNav()">
+            <i class="fas fa-bars"></i>
+            <span class="meets-title">Meet Results</span>
+        </span>
+      </div>
         <h1><a href="https://www.athletic.net/CrossCountry/meet/235827/results/943367">37th Early Bird Open Mens 5000 Meters HS Open 5K</a></h1>
         <h2>Thu Aug 29 2024</h2>
 </header>
@@ -30,28 +41,34 @@
       <p>The Skyline team performed admirably at the 37th Early Bird Open, securing 7th place overall with a team score of 186. Notable individual performances include several athletes who achieved personal records (PRs). <span class="athlete">Matthew Guikema</span> led the team with a time of <time>17:35.10</time>, followed closely by <span class="athlete">Nicholas Yuan</span> at <time>17:44.40</time>. <span class="athlete">Zeke Lafferty</span>, <span class="athlete">Jack Robichaud</span>, and <span class="athlete">Gustaf Finn</span> rounded out the top five for Skyline, contributing to the team's tight spread between runners. Other athletes who achieved PRs include <span class="athlete">Oskar MacArthur</span> (<time>18:37.50</time>), <span class="athlete">Grayson Crooks</span> (<time>19:37.10</time>), <span class="athlete">Juan Luis Llanes</span> (<time>19:48.00</time>), and <span class="athlete">Paxton Alicandro</span> (<time>21:13.00</time>). This race showcased the team's strong depth and improvement as they continue the season.</p>
     </section>
 <section id="team-results">
+    <h2>Team Results</h2>
+    <div class="table-grid">
+        <table>
+            <thead>
+                <tr><th>Place</th><th>Team</th><th>Score</th></tr>
+            </thead>
+            <tr><td>1</td><td>Livonia Churchill</td><td> 95</td></tr>
+            <tr><td>2</td><td>Ann Arbor Pioneer</td><td> 126</td></tr>
+            <tr><td>3</td><td>White Lake Lakeland</td><td> 127</td></tr>
+            <tr><td>4</td><td>Plymouth</td><td> 134</td></tr>
+            <tr><td>5</td><td>Ann Arbor Huron</td><td> 164</td></tr>
+            <tr><td>6</td><td>Romeo</td><td> 186</td></tr>
+            <tr><td>7</td><td>Ann Arbor Skyline</td><td> 244</td></tr>
+            <tr><td>8</td><td>Grand Blanc</td><td> 247</td></tr>
+            <tr><td>9</td><td>Mason</td><td> 280</td></tr>
+            <tr><td>10</td><td>South Lyon</td><td> 291</td></tr>
+            <tr class="hidden"><td>11</td><td>South Lyon East</td><td> 318</td></tr>
+            <tr class="hidden"><td>12</td><td>Fenton</td><td> 327</td></tr>
+            <tr class="hidden"><td>13</td><td>Fraser</td><td> 346</td></tr>
+            <tr class="hidden"><td>14</td><td>Whitmore Lake</td><td> 467</td></tr>
+            <tr class="hidden"><td>15</td><td>Waterford Kettering</td><td> 477</td></tr>
+            <tr class="hidden"><td>16</td><td>North Farmington</td><td> 504</td></tr>
+            <tr class="hidden"><td>17</td><td>Ypsilanti Community</td><td> 546</td></tr>
+            <tr class="hidden"><td>18</td><td>Waterford Mott</td><td> 551</td></tr>
+        </table>
+        <button id="show-more" style="display: none;">Show More</button>
+    </div>
 
-        <h2>Team Results</h2><table>
-<tr><th>Place</th><th>Team</th><th>Score</th></tr>
-<tr><td>1</td><td>Livonia Churchill</td><td> 95</td></tr>
-<tr><td>2</td><td>Ann Arbor Pioneer</td><td> 126</td></tr>
-<tr><td>3</td><td>White Lake Lakeland</td><td> 127</td></tr>
-<tr><td>4</td><td>Plymouth</td><td> 134</td></tr>
-<tr><td>5</td><td>Ann Arbor Huron</td><td> 164</td></tr>
-<tr><td>6</td><td>Romeo</td><td> 186</td></tr>
-<tr><td>7</td><td>Ann Arbor Skyline</td><td> 244</td></tr>
-<tr><td>8</td><td>Grand Blanc</td><td> 247</td></tr>
-<tr><td>9</td><td>Mason</td><td> 280</td></tr>
-<tr><td>10</td><td>South Lyon</td><td> 291</td></tr>
-<tr><td>11</td><td>South Lyon East</td><td> 318</td></tr>
-<tr><td>12</td><td>Fenton</td><td> 327</td></tr>
-<tr><td>13</td><td>Fraser</td><td> 346</td></tr>
-<tr><td>14</td><td>Whitmore Lake</td><td> 467</td></tr>
-<tr><td>15</td><td>Waterford Kettering</td><td> 477</td></tr>
-<tr><td>16</td><td>North Farmington</td><td> 504</td></tr>
-<tr><td>17</td><td>Ypsilanti Community</td><td> 546</td></tr>
-<tr><td>18</td><td>Waterford Mott</td><td> 551</td></tr>
-</table>
 </section>
 
                     <section id="individual-results">
@@ -227,18 +244,6 @@
 
 <div class="athlete">
 <figure> 
-    <img src="../images/profiles/26322015.jpg" width="200" alt="Profile picture of Elliot Daley"> 
-    <figcaption>Elliot Daley</figcaption>
-</figure>
-<dl>
-    <dt>Place</dt><dd>114.</dd>
-    <dt>Time</dt><dd>19:55.40</dd>
-    <dt>Grade</dt><dd>9</dd>
-</dl>
-</div>
-
-<div class="athlete">
-<figure> 
     <img src="../images/profiles/23349712.jpg" width="200" alt="Profile picture of Paxton Rose"> 
     <figcaption>Paxton Rose</figcaption>
 </figure>
@@ -339,5 +344,6 @@
 
 
                      </footer>
+        <script src="../js/animation.js"></script>
         </body>
 </html>
