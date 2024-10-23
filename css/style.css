@@ -2,6 +2,10 @@
 
 /* dark mode styling! */
 
+body {
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
 .dark-mode nav {
     background-color: #181818;
 }
